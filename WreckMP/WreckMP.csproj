@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41E7B5C8-49C6-413B-815E-A007B24E57A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WreckMP</RootNamespace>
+    <AssemblyName>WreckMP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="Assembly-UnityScript-firstpass" />
+    <Reference Include="cInput" />
+    <Reference Include="PlayMaker" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine.UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimatorSyncer.cs" />
+    <Compile Include="CashRegister.cs" />
+    <Compile Include="CharacterCustomization.cs" />
+    <Compile Include="CharacterCustomizationItem.cs" />
+    <Compile Include="Clipboard.cs" />
+    <Compile Include="CommandHandler.cs" />
+    <Compile Include="Console.cs" />
+    <Compile Include="CoreManager.cs" />
+    <Compile Include="CPPTEST.cs" />
+    <Compile Include="DateTimeExtension.cs" />
+    <Compile Include="Discord\AchievementManager.cs" />
+    <Compile Include="Discord\Activity.cs" />
+    <Compile Include="Discord\ActivityActionType.cs" />
+    <Compile Include="Discord\ActivityAssets.cs" />
+    <Compile Include="Discord\ActivityJoinRequestReply.cs" />
+    <Compile Include="Discord\ActivityManager.cs" />
+    <Compile Include="Discord\ActivityParty.cs" />
+    <Compile Include="Discord\ActivitySecrets.cs" />
+    <Compile Include="Discord\ActivityTimestamps.cs" />
+    <Compile Include="Discord\ActivityType.cs" />
+    <Compile Include="Discord\ApplicationManager.cs" />
+    <Compile Include="Discord\Constants.cs" />
+    <Compile Include="Discord\CreateFlags.cs" />
+    <Compile Include="Discord\Discord.cs" />
+    <Compile Include="Discord\Entitlement.cs" />
+    <Compile Include="Discord\EntitlementType.cs" />
+    <Compile Include="Discord\FileStat.cs" />
+    <Compile Include="Discord\ImageDimensions.cs" />
+    <Compile Include="Discord\ImageHandle.cs" />
+    <Compile Include="Discord\ImageManager.cs" />
+    <Compile Include="Discord\ImageType.cs" />
+    <Compile Include="Discord\InputMode.cs" />
+    <Compile Include="Discord\InputModeType.cs" />
+    <Compile Include="Discord\Lobby.cs" />
+    <Compile Include="Discord\LobbyManager.cs" />
+    <Compile Include="Discord\LobbyMemberTransaction.cs" />
+    <Compile Include="Discord\LobbySearchCast.cs" />
+    <Compile Include="Discord\LobbySearchComparison.cs" />
+    <Compile Include="Discord\LobbySearchDistance.cs" />
+    <Compile Include="Discord\LobbySearchQuery.cs" />
+    <Compile Include="Discord\LobbyTransaction.cs" />
+    <Compile Include="Discord\LobbyType.cs" />
+    <Compile Include="Discord\LogLevel.cs" />
+    <Compile Include="Discord\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Discord\NetworkManager.cs" />
+    <Compile Include="Discord\OAuth2Token.cs" />
+    <Compile Include="Discord\OverlayManager.cs" />
+    <Compile Include="Discord\PartySize.cs" />
+    <Compile Include="Discord\PremiumType.cs" />
+    <Compile Include="Discord\Presence.cs" />
+    <Compile Include="Discord\Relationship.cs" />
+    <Compile Include="Discord\RelationshipManager.cs" />
+    <Compile Include="Discord\RelationshipType.cs" />
+    <Compile Include="Discord\Result.cs" />
+    <Compile Include="Discord\ResultException.cs" />
+    <Compile Include="Discord\Sku.cs" />
+    <Compile Include="Discord\SkuPrice.cs" />
+    <Compile Include="Discord\SkuType.cs" />
+    <Compile Include="Discord\Status.cs" />
+    <Compile Include="Discord\StorageManager.cs" />
+    <Compile Include="Discord\StoreManager.cs" />
+    <Compile Include="Discord\User.cs" />
+    <Compile Include="Discord\UserAchievement.cs" />
+    <Compile Include="Discord\UserFlag.cs" />
+    <Compile Include="Discord\UserManager.cs" />
+    <Compile Include="Discord\VoiceManager.cs" />
+    <Compile Include="FastIKFabric.cs" />
+    <Compile Include="FieldCacher.cs" />
+    <Compile Include="FsmDashboardButton.cs" />
+    <Compile Include="FsmDashboardKnob.cs" />
+    <Compile Include="FsmDashboardLever.cs" />
+    <Compile Include="FsmHorn.cs" />
+    <Compile Include="FsmIgnition.cs" />
+    <Compile Include="FsmInteriorLight.cs" />
+    <Compile Include="FsmNetVehicle.cs" />
+    <Compile Include="FsmStarter.cs" />
+    <Compile Include="FsmTurnSignals.cs" />
+    <Compile Include="FsmVehicleDoor.cs" />
+    <Compile Include="GameEvent.2.cs" />
+    <Compile Include="GameEvent.cs" />
+    <Compile Include="GameEventList.cs" />
+    <Compile Include="GameEventReader.cs" />
+    <Compile Include="GameEventRouter.cs" />
+    <Compile Include="GameEventWriter.cs" />
+    <Compile Include="GameobjectToggleWatcher.cs" />
+    <Compile Include="GameScene.cs" />
+    <Compile Include="HandPositionFixer.cs" />
+    <Compile Include="Hashtable.cs" />
+    <Compile Include="HeaderDebug.cs" />
+    <Compile Include="JointCache.cs" />
+    <Compile Include="JointWatcher.cs" />
+    <Compile Include="LobbyCodeParser.cs" />
+    <Compile Include="LobbyID.cs" />
+    <Compile Include="LocalPlayer.cs" />
+    <Compile Include="LocalPlayerAnimationManager.cs" />
+    <Compile Include="MPItem.cs" />
+    <Compile Include="NetBoatManager.cs" />
+    <Compile Include="NetCarpartsOrderManager.cs" />
+    <Compile Include="NetCreateItemsManager.cs" />
+    <Compile Include="NetDoorManager.cs" />
+    <Compile Include="NetFloorJackManager.cs" />
+    <Compile Include="NetGameWorldManager.cs" />
+    <Compile Include="NetItemsManager.cs" />
+    <Compile Include="NetJobManager.cs" />
+    <Compile Include="NetManager.cs" />
+    <Compile Include="NetMotorHoistManager.cs" />
+    <Compile Include="NetNpcManager.cs" />
+    <Compile Include="NetOvenManager.cs" />
+    <Compile Include="NetPartManager.cs" />
+    <Compile Include="NetRadioManager.cs" />
+    <Compile Include="NetReplayManager.cs" />
+    <Compile Include="NetRigidbodyManager.cs" />
+    <Compile Include="NetSaunaManager.cs" />
+    <Compile Include="NetSleepingManager.cs" />
+    <Compile Include="NetStoreManager.cs" />
+    <Compile Include="NetSwitchManager.cs" />
+    <Compile Include="NetTelephoneManager.cs" />
+    <Compile Include="NetTowHookManager.cs" />
+    <Compile Include="NetTVManager.cs" />
+    <Compile Include="NetVehicle.cs" />
+    <Compile Include="NetVehicleAudio.cs" />
+    <Compile Include="NetVehicleDriverPivots.cs" />
+    <Compile Include="NetVehicleManager.cs" />
+    <Compile Include="NetWaterSourceManager.cs" />
+    <Compile Include="ObjectUtilities.cs" />
+    <Compile Include="OwnedRigidbody.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerAnimationManager.cs" />
+    <Compile Include="PlayerDeathManager.cs" />
+    <Compile Include="PlayerGrabbingManager.cs" />
+    <Compile Include="PlayMakerUtilities.cs" />
+    <Compile Include="PM_Hook.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Raycaster.cs" />
+    <Compile Include="SatsumaProfiler.cs" />
+    <Compile Include="SceneLoader.cs" />
+    <Compile Include="SleepingBag.cs" />
+    <Compile Include="SleepTrigger.cs" />
+    <Compile Include="SteamNet.cs" />
+    <Compile Include="StoreProduct.cs" />
+    <Compile Include="TowHookTrigger.cs" />
+    <Compile Include="TowRope.cs" />
+    <Compile Include="UIManager.cs" />
+    <Compile Include="WreckMP.cs" />
+    <Compile Include="WreckMPEntry.cs" />
+    <Compile Include="WreckMPGlobals.cs" />
+    <Compile Include="_ObjectsLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
